@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>PAGE XML field-only geometry derived from the user-provided layout annotations</Creator>
+        <Created>2026-10-19T16:38:23.322+02:00</Created>
+        <LastChange>2026-10-19T15:58:04.658568+00:00</LastChange>
+    </Metadata>
+    <Page imageFilename="0006_0037_p6.png" imageWidth="4026" imageHeight="5910">
+        <ReadingOrder><OrderedGroup id="ro_0006" caption="Regions reading order"><RegionRefIndexed index="0" regionRef="header"/><RegionRefIndexed index="1" regionRef="left_column"/><RegionRefIndexed index="2" regionRef="right_column"/></OrderedGroup></ReadingOrder><TextRegion id="header" custom="readingOrder {index:0;} structure {type:caption;}"><Coords points="227,187 2336,187 2336,336 227,336"/></TextRegion><TextRegion id="left_column" custom="readingOrder {index:1;} structure {type:paragraph;}"><Coords points="235,429 1932,429 1932,5374 235,5374"/></TextRegion><TextRegion id="right_column" custom="readingOrder {index:2;} structure {type:paragraph;}"><Coords points="2057,429 3758,429 3758,5375 2057,5375"/></TextRegion></Page>
+</PcGts>

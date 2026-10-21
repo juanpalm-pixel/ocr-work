@@ -1,0 +1,8 @@
+name: session04-ocr
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - "kraken[pdf]==7.1.1"
