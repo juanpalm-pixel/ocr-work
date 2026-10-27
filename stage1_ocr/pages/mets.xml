@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" OBJID="Jian_Bo_Gushu_pages_1-20">
+  <fileSec>
+    <fileGrp USE="images">
+      <file ID="img_0001" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0001_0032_p1.png" />
+      </file>
+      <file ID="img_0002" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0002_0033_p2.png" />
+      </file>
+      <file ID="img_0003" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0003_0034_p3.png" />
+      </file>
+      <file ID="img_0004" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0004_0035_p4.png" />
+      </file>
+      <file ID="img_0005" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0005_0036_p5.png" />
+      </file>
+      <file ID="img_0006" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0006_0037_p6.png" />
+      </file>
+      <file ID="img_0007" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0007_0038_p7.png" />
+      </file>
+      <file ID="img_0008" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0008_0039_p8.png" />
+      </file>
+      <file ID="img_0009" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0009_0040_p9.png" />
+      </file>
+      <file ID="img_0010" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0010_0041_p10.png" />
+      </file>
+      <file ID="img_0011" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0011_0042_p11.png" />
+      </file>
+      <file ID="img_0012" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0012_0043_p12.png" />
+      </file>
+      <file ID="img_0013" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0013_0044_p13.png" />
+      </file>
+      <file ID="img_0014" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0014_0045_p14.png" />
+      </file>
+      <file ID="img_0015" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0015_0046_p15.png" />
+      </file>
+      <file ID="img_0016" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0016_0047_p16.png" />
+      </file>
+      <file ID="img_0017" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0017_0048_p17.png" />
+      </file>
+      <file ID="img_0018" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0018_0049_p18.png" />
+      </file>
+      <file ID="img_0019" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0019_0050_p19.png" />
+      </file>
+      <file ID="img_0020" MIMETYPE="image/png">
+        <FLocat LOCTYPE="URL" xlink:href="0020_0051_p20.png" />
+      </file>
+    </fileGrp>
+    <fileGrp USE="transcription">
+      <file ID="page_0001" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0001_0032_p1.xml" />
+      </file>
+      <file ID="page_0002" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0002_0033_p2.xml" />
+      </file>
+      <file ID="page_0003" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0003_0034_p3.xml" />
+      </file>
+      <file ID="page_0004" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0004_0035_p4.xml" />
+      </file>
+      <file ID="page_0005" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0005_0036_p5.xml" />
+      </file>
+      <file ID="page_0006" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0006_0037_p6.xml" />
+      </file>
+      <file ID="page_0007" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0007_0038_p7.xml" />
+      </file>
+      <file ID="page_0008" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0008_0039_p8.xml" />
+      </file>
+      <file ID="page_0009" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0009_0040_p9.xml" />
+      </file>
+      <file ID="page_0010" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0010_0041_p10.xml" />
+      </file>
+      <file ID="page_0011" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0011_0042_p11.xml" />
+      </file>
+      <file ID="page_0012" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0012_0043_p12.xml" />
+      </file>
+      <file ID="page_0013" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0013_0044_p13.xml" />
+      </file>
+      <file ID="page_0014" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0014_0045_p14.xml" />
+      </file>
+      <file ID="page_0015" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0015_0046_p15.xml" />
+      </file>
+      <file ID="page_0016" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0016_0047_p16.xml" />
+      </file>
+      <file ID="page_0017" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0017_0048_p17.xml" />
+      </file>
+      <file ID="page_0018" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0018_0049_p18.xml" />
+      </file>
+      <file ID="page_0019" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0019_0050_p19.xml" />
+      </file>
+      <file ID="page_0020" MIMETYPE="application/xml">
+        <FLocat LOCTYPE="URL" xlink:href="0020_0051_p20.xml" />
+      </file>
+    </fileGrp>
+  </fileSec>
+  <structMap TYPE="PHYSICAL">
+    <div TYPE="book" LABEL="Jian Bo Gushu pages 1-20">
+      <div TYPE="page" ORDER="1" LABEL="Page 1">
+        <fptr FILEID="img_0001" />
+        <fptr FILEID="page_0001" />
+      </div>
+      <div TYPE="page" ORDER="2" LABEL="Page 2">
+        <fptr FILEID="img_0002" />
+        <fptr FILEID="page_0002" />
+      </div>
+      <div TYPE="page" ORDER="3" LABEL="Page 3">
+        <fptr FILEID="img_0003" />
+        <fptr FILEID="page_0003" />
+      </div>
+      <div TYPE="page" ORDER="4" LABEL="Page 4">
+        <fptr FILEID="img_0004" />
+        <fptr FILEID="page_0004" />
+      </div>
+      <div TYPE="page" ORDER="5" LABEL="Page 5">
+        <fptr FILEID="img_0005" />
+        <fptr FILEID="page_0005" />
+      </div>
+      <div TYPE="page" ORDER="6" LABEL="Page 6">
+        <fptr FILEID="img_0006" />
+        <fptr FILEID="page_0006" />
+      </div>
+      <div TYPE="page" ORDER="7" LABEL="Page 7">
+        <fptr FILEID="img_0007" />
+        <fptr FILEID="page_0007" />
+      </div>
+      <div TYPE="page" ORDER="8" LABEL="Page 8">
+        <fptr FILEID="img_0008" />
+        <fptr FILEID="page_0008" />
+      </div>
+      <div TYPE="page" ORDER="9" LABEL="Page 9">
+        <fptr FILEID="img_0009" />
+        <fptr FILEID="page_0009" />
+      </div>
+      <div TYPE="page" ORDER="10" LABEL="Page 10">
+        <fptr FILEID="img_0010" />
+        <fptr FILEID="page_0010" />
+      </div>
+      <div TYPE="page" ORDER="11" LABEL="Page 11">
+        <fptr FILEID="img_0011" />
+        <fptr FILEID="page_0011" />
+      </div>
+      <div TYPE="page" ORDER="12" LABEL="Page 12">
+        <fptr FILEID="img_0012" />
+        <fptr FILEID="page_0012" />
+      </div>
+      <div TYPE="page" ORDER="13" LABEL="Page 13">
+        <fptr FILEID="img_0013" />
+        <fptr FILEID="page_0013" />
+      </div>
+      <div TYPE="page" ORDER="14" LABEL="Page 14">
+        <fptr FILEID="img_0014" />
+        <fptr FILEID="page_0014" />
+      </div>
+      <div TYPE="page" ORDER="15" LABEL="Page 15">
+        <fptr FILEID="img_0015" />
+        <fptr FILEID="page_0015" />
+      </div>
+      <div TYPE="page" ORDER="16" LABEL="Page 16">
+        <fptr FILEID="img_0016" />
+        <fptr FILEID="page_0016" />
+      </div>
+      <div TYPE="page" ORDER="17" LABEL="Page 17">
+        <fptr FILEID="img_0017" />
+        <fptr FILEID="page_0017" />
+      </div>
+      <div TYPE="page" ORDER="18" LABEL="Page 18">
+        <fptr FILEID="img_0018" />
+        <fptr FILEID="page_0018" />
+      </div>
+      <div TYPE="page" ORDER="19" LABEL="Page 19">
+        <fptr FILEID="img_0019" />
+        <fptr FILEID="page_0019" />
+      </div>
+      <div TYPE="page" ORDER="20" LABEL="Page 20">
+        <fptr FILEID="img_0020" />
+        <fptr FILEID="page_0020" />
+      </div>
+    </div>
+  </structMap>
+</mets>

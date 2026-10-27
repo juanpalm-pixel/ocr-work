@@ -1,0 +1,15 @@
+services:
+  celery-gpu:
+    image: local/escriptorium-celery-gpu:kraken-7.0.3
+    build:
+      context: ${OCR_WORK_REPO_DIR}/docker/kraken-7.0.3
+      dockerfile: Dockerfile
+    environment:
+      KRAKEN_TRAINING_DEVICE: cuda:0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
