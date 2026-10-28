@@ -7,7 +7,7 @@ Set `OCR_WORK_REPO_DIR` to your local copy of this repository. From the eScripto
 ```bash
 cd /path/to/escriptorium
 export OCR_WORK_REPO_DIR=/path/to/ocr-work
-cp "$OCR_WORK_REPO_DIR/docker/kraken-7.0.3/compose.override.yml" docker-compose.override.yml
+cp "$OCR_WORK_REPO_DIR/stage_2/docker/kraken-7.0.3/compose.override.yml" docker-compose.override.yml
 docker compose build celery-gpu
 docker compose up -d --no-deps celery-gpu
 docker compose exec -T celery-gpu python -m pip show kraken | grep '^Version:'
@@ -28,7 +28,7 @@ docker run --rm --gpus all --entrypoint python local/escriptorium-celery-gpu:kra
 If this prints `GPU available: True`, wait for any active training to finish, then run:
 
 ```bash
-cp "$OCR_WORK_REPO_DIR/docker/kraken-7.0.3/compose.gpu.yml" docker-compose.override.yml
+cp "$OCR_WORK_REPO_DIR/stage_2/docker/kraken-7.0.3/compose.gpu.yml" docker-compose.override.yml
 docker compose up -d --no-deps celery-gpu
 docker compose exec -T celery-gpu python -c 'import torch; print("GPU available:", torch.cuda.is_available())'
 ```

@@ -2,7 +2,7 @@ services:
   celery-gpu:
     image: local/escriptorium-celery-gpu:kraken-7.0.3
     build:
-      context: ${OCR_WORK_REPO_DIR}/docker/kraken-7.0.3
+      context: ${OCR_WORK_REPO_DIR}/stage_2/docker/kraken-7.0.3
       dockerfile: Dockerfile
     environment:
       KRAKEN_TRAINING_DEVICE: cuda:0
