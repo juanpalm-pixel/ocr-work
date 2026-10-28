@@ -13,32 +13,36 @@ The historical classification in this source is material to examine, not a curre
 From the repository root, create the supplied Conda environment, activate it, and download a print recognition model:
 
 ```bash
-conda env create -f stage_1/environment.yml # This creates the environment. -f means that it finds a file which contains all the information relating to the environment
+conda env create -f stage_1/environment.yml 
 conda activate kraken-practical # To activate the environment. If you check the yaml file, you will see that the name we give the environment is 'kraken-practical'
-kraken --version # See what version of Kraken you are using
-kraken get 10.5281/zenodo.10592716 # Download the print recognition model used by the OCR commands below
-cd stage_1 # Move into the 'stage_1' directory
+kraken --version 
+kraken get 10.5281/zenodo.10592716 
+```
+
+Note that if you need help with one of the commands, be sure to use one of the two following commands. They can help explain what certain parts of the command mean. Try to use the '--help' command to eplain what each part of the command does!
+
+```bash
+conda --help
+kraken --help
 ```
 
 The model is [CATMuS-Print Large](https://zenodo.org/records/10592716), a print model covering several Western European languages including English. Kraken stores the downloaded `catmus-print-fondue-large.mlmodel` in its model directory. It is a starting model, not a guarantee of accurate transcription for these pages.
 
 ## Run the prose page
 
-Run each command from inside `stage_1/`:
-
 ```bash
-kraken -i images/lsi_v3p1_p010_prose.jpg output/prose_binary.png binarize # '-i' refers to the input scan that we want to use, whilst 'binerize' tells the programme what it is that we want to do with the input scan
-kraken -x -i "$PWD/images/lsi_v3p1_p010_prose.jpg" output/prose_layout.xml segment -bl # '-x' tells the programme we want to convert the file into an xml file, '-i' refers to the input scan, and '-bl' detects line baselines in th original scan 
-kraken -f page -i output/prose_layout.xml output/prose_ocr.txt ocr -m catmus-print-fondue-large.mlmodel # '-f' page tells Kraken to read that PAGE XML, 'ocr -m catmus-print-fondue-large.mlmodel' uses the downloaded model to read the detected lines and writes the output at prose_ocr.txt.
+kraken -i stage_1/images/lsi_v3p1_p010_prose.jpg stage_1/output/prose_binary.png binarize 
+kraken -x -i /stage_1/images/lsi_v3p1_p010_prose.jpg stage_1/output/prose_layout.xml segment -bl 
+kraken -f page -i stage_1/output/prose_layout.xml stage_1/output/prose_ocr.txt ocr -m catmus-print-fondue-large.mlmodel
 ```
-
-The first command creates a black-and-white image so you can inspect what binarization does. The neural baseline segmenter in the second command reads the original scan and writes line positions as PAGE XML. The third reads those lines and applies the recognition model to produce text. `$PWD` supplies the absolute image path so the PAGE XML in `output/` can find its scan in `images/`.
 
 Open `output/prose_binary.png` and `output/prose_layout.xml`; then compare `output/prose_ocr.txt` with the scan. For a quick look at the text in a terminal:
 
 ```bash
-sed -n '1,35p' output/prose_ocr.txt # Displays the first 35 lines of 'output/prose_ocr.txt' in the terminal. 'sed' reads the file, and '-n' tells the programe to print lines -n 1-35
+sed -n '1,35p' stage_1/output/prose_ocr.txt # Displays the first 35 lines of 'output/prose_ocr.txt' in the terminal. 'sed' reads the file, and '-n' tells the programe to print lines -n 1-35
 ```
+
+Again, use 'sed --help' to understand what is going on in the code
 
 Find one correctly read line, one character error, and one layout or reading-order error. Keep in mind that plausible English sentences can still contain wrong names or diacritics.
 
@@ -47,11 +51,10 @@ Find one correctly read line, one character error, and one layout or reading-ord
 Use the same three steps on printed page 482:
 
 ```bash
-kraken -i images/lsi_v3p1_p482_linguistic.jpg output/linguistic_binary.png binarize
-kraken -x -i "$PWD/images/lsi_v3p1_p482_linguistic.jpg" output/linguistic_layout.xml segment -bl
-kraken -f page -i output/linguistic_layout.xml output/linguistic_ocr.txt ocr -m catmus-print-fondue-large.mlmodel
+kraken -i stage_1/images/lsi_v3p1_p482_linguistic.jpg output/linguistic_binary.png binarize
+kraken -x -i stage_1/images/lsi_v3p1_p482_linguistic.jpg stage_1/output/linguistic_layout.xml segment -bl
+kraken -f page -i stage_1/output/linguistic_layout.xml stage_1/output/linguistic_ocr.txt ocr -m catmus-print-fondue-large.mlmodel
 ```
 
-Compare `output/linguistic_ocr.txt` with the image, especially the transcribed forms and the table. Record where Kraken misreads a diacritic or puts table cells in the wrong order. Discuss why a smooth-looking transcription can still misrepresent linguistic evidence.
+Compare 'stage_1/output/linguistic_ocr.txt' with the image, especially the transcribed forms and the table. Record where Kraken misreads a diacritic or puts table cells in the wrong order. Discuss why a smooth-looking transcription can still misrepresent linguistic evidence.
 
-Generated files stay in `output/` and are ignored by Git. The two source scans and their filenames are unchanged.
