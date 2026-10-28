@@ -4,3 +4,5 @@ services:
     build:
       context: ${OCR_WORK_REPO_DIR}/stage_2/docker/kraken-7.0.3
       dockerfile: Dockerfile
+    environment:
+      KRAKEN_TRAINING_DEVICE: cpu
