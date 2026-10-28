@@ -10,7 +10,7 @@ The historical classification in this source is material to examine, not a curre
 
 ## Set up Kraken
 
-Note that if you need help with one of the commands, be sure to use one of the two following commands. They can help explain what certain parts of the command mean. Try to use the '--help' command to eplain what each part of the command does!
+Note that if you need help with one of the commands, be sure to use one of the two following commands. They can help explain what certain parts of the command mean. Try to use the `--help` command to eplain what each part of the command does!
 
 ```bash
 conda --help
@@ -21,12 +21,12 @@ From the repository root, create the supplied Conda environment, activate it, an
 
 ```bash
 conda env create -f stage_1/environment.yml 
-conda activate kraken-practical # To activate the environment. If you check the yaml file, you will see that the name we give the environment is 'kraken-practical'
+conda activate kraken-practical # To activate the environment. If you check the yaml file, you will see that the name we give the environment is `kraken-practical`
 kraken --version 
 kraken get 10.5281/zenodo.10592716 
 ```
 
-The model is [CATMuS-Print Large](https://zenodo.org/records/10592716), a print model covering several Western European languages including English. Kraken stores the downloaded 'catmus-print-fondue-large.mlmodel' in its model directory. It is a starting model, not a guarantee of accurate transcription for these pages.
+The model is [CATMuS-Print Large](https://zenodo.org/records/10592716), a print model covering several Western European languages including English. Kraken stores the downloaded `catmus-print-fondue-large.mlmodel` in its model directory. It is a starting model, not a guarantee of accurate transcription for these pages.
 
 ## Run the prose page
 
@@ -36,13 +36,13 @@ kraken -x -i /stage_1/images/lsi_v3p1_p010_prose.jpg stage_1/output/prose_layout
 kraken -f page -i stage_1/output/prose_layout.xml stage_1/output/prose_ocr.txt ocr -m catmus-print-fondue-large.mlmodel
 ```
 
-Open 'stage_1/output/prose_binary.png' and 'stage_1/output/prose_layout.xml'; then compare 'output/prose_ocr.txt' with the scan. For a quick look at the text in a terminal:
+Open `stage_1/output/prose_binary.png` and `stage_1/output/prose_layout.xml`; then compare `output/prose_ocr.txt` with the scan. For a quick look at the text in a terminal:
 
 ```bash
-sed -n '1,35p' stage_1/output/prose_ocr.txt # Displays the first 35 lines of 'output/prose_ocr.txt' in the terminal. 'sed' reads the file, and '-n' tells the programe to print lines -n 1-35
+sed -n '1,35p' stage_1/output/prose_ocr.txt # Displays the first 35 lines of `output/prose_ocr.txt` in the terminal. `sed` reads the file, and `-n` tells the programe to print lines -n 1-35
 ```
 
-Again, use 'sed --help' to understand what is going on in the code
+Again, use `sed --help` to understand what is going on in the code
 
 Find one correctly read line, one character error, and one layout or reading-order error. Keep in mind that plausible English sentences can still contain wrong names or diacritics.
 
@@ -56,5 +56,5 @@ kraken -x -i stage_1/images/lsi_v3p1_p482_linguistic.jpg stage_1/output/linguist
 kraken -f page -i stage_1/output/linguistic_layout.xml stage_1/output/linguistic_ocr.txt ocr -m catmus-print-fondue-large.mlmodel
 ```
 
-Compare 'stage_1/output/linguistic_ocr.txt' with the image, especially the transcribed forms and the table. Record where Kraken misreads a diacritic or puts table cells in the wrong order. Discuss why a smooth-looking transcription can still misrepresent linguistic evidence.
+Compare `stage_1/output/linguistic_ocr.txt` with the image, especially the transcribed forms and the table. Record where Kraken misreads a diacritic or puts table cells in the wrong order. Discuss why a smooth-looking transcription can still misrepresent linguistic evidence.
 
