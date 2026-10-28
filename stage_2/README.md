@@ -8,6 +8,8 @@ All page files are loose files in [`stage_2/pages/`](pages/): 20 `.png` scans, 2
 
 The XML includes regions, lines, reading order, and provisional transcription. Some text was visually corrected, but the pages have **not** been checked line by line and the geometry has not been verified throughout. Review the annotations against the scans before treating them as ground truth. The `IMAGE_XXXX` tokens are unresolved character references, not characters to teach a recognition model.
 
+For optional automatic recognition or segmentation, the `chat_rec.mlmodel` and `chat_seg.mlmodel` files are available from the [CHAT models GitHub repository](https://github.com/colibrisson/CHAT_models). The model files are not included here.
+
 ## Run eScriptorium locally
 
 Install Docker Desktop, enable WSL integration for your Ubuntu distribution if you use Windows, and download the [eScriptorium source](https://gitlab.com/scripta/escriptorium). In the terminal where you will run eScriptorium, check that Docker is connected:

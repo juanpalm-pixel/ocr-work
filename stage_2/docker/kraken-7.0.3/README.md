@@ -33,4 +33,18 @@ docker compose up -d --no-deps celery-gpu
 docker compose exec -T celery-gpu python -c 'import torch; print("GPU available:", torch.cuda.is_available())'
 ```
 
-The GPU override requests one NVIDIA GPU and sets `KRAKEN_TRAINING_DEVICE=cuda:0`. To return to CPU training, copy `compose.override.yml` from this directory over the checkout's `docker-compose.override.yml` and restart `celery-gpu`.
+The GPU override requests one NVIDIA GPU and sets `KRAKEN_TRAINING_DEVICE=cuda:0`.
+
+## Return to CPU training
+
+Wait for any active training to finish. From the eScriptorium checkout, replace the GPU override with the CPU override and recreate the worker:
+
+```bash
+cd /path/to/escriptorium
+export OCR_WORK_REPO_DIR=/path/to/ocr-work
+cp "$OCR_WORK_REPO_DIR/stage_2/docker/kraken-7.0.3/compose.override.yml" docker-compose.override.yml
+docker compose up -d --no-deps --force-recreate celery-gpu
+docker compose exec -T celery-gpu printenv KRAKEN_TRAINING_DEVICE
+```
+
+The last command should print `cpu`. The base eScriptorium Compose file sets that value; the CPU override removes the GPU request. The same Kraken 7.0.3 image is used, so there is no need to rebuild it.
