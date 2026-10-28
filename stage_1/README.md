@@ -10,6 +10,13 @@ The historical classification in this source is material to examine, not a curre
 
 ## Set up Kraken
 
+Note that if you need help with one of the commands, be sure to use one of the two following commands. They can help explain what certain parts of the command mean. Try to use the '--help' command to eplain what each part of the command does!
+
+```bash
+conda --help
+kraken --help
+```
+
 From the repository root, create the supplied Conda environment, activate it, and download a print recognition model:
 
 ```bash
@@ -19,14 +26,7 @@ kraken --version
 kraken get 10.5281/zenodo.10592716 
 ```
 
-Note that if you need help with one of the commands, be sure to use one of the two following commands. They can help explain what certain parts of the command mean. Try to use the '--help' command to eplain what each part of the command does!
-
-```bash
-conda --help
-kraken --help
-```
-
-The model is [CATMuS-Print Large](https://zenodo.org/records/10592716), a print model covering several Western European languages including English. Kraken stores the downloaded `catmus-print-fondue-large.mlmodel` in its model directory. It is a starting model, not a guarantee of accurate transcription for these pages.
+The model is [CATMuS-Print Large](https://zenodo.org/records/10592716), a print model covering several Western European languages including English. Kraken stores the downloaded 'catmus-print-fondue-large.mlmodel' in its model directory. It is a starting model, not a guarantee of accurate transcription for these pages.
 
 ## Run the prose page
 
@@ -36,7 +36,7 @@ kraken -x -i /stage_1/images/lsi_v3p1_p010_prose.jpg stage_1/output/prose_layout
 kraken -f page -i stage_1/output/prose_layout.xml stage_1/output/prose_ocr.txt ocr -m catmus-print-fondue-large.mlmodel
 ```
 
-Open `output/prose_binary.png` and `output/prose_layout.xml`; then compare `output/prose_ocr.txt` with the scan. For a quick look at the text in a terminal:
+Open 'stage_1/output/prose_binary.png' and 'stage_1/output/prose_layout.xml'; then compare 'output/prose_ocr.txt' with the scan. For a quick look at the text in a terminal:
 
 ```bash
 sed -n '1,35p' stage_1/output/prose_ocr.txt # Displays the first 35 lines of 'output/prose_ocr.txt' in the terminal. 'sed' reads the file, and '-n' tells the programe to print lines -n 1-35
